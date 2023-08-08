@@ -11,12 +11,38 @@ body {
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+/* Used as an alternative to display in the ul */
+.logo,
+.links {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+
+/* .profile-image,
+.notifications {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+} */
+
+.right,
+.left {
+  display: flex;
+  gap: 16px;
 }
 
 .profile-image {
   background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, .5);
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -45,4 +71,9 @@ a {
 
 ul {
   list-style-type: none;
+  /* display: flex;
+  Added in display from memo */
+  margin: 0;
+  padding: 0;
+  gap: 16px;
 }

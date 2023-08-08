@@ -1,6 +1,10 @@
-.header  {
+.header {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo {
@@ -9,11 +13,49 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  flex: 0 1 1;
+  border: 2px solid burlywood;
 }
+
+.right-links {
+  flex: 0 1 1;
+  margin: 20px;
+}
+
+.left-links {
+  flex: 0 1 1;
+  margin: 20px;
+}
+
+/* find difference between align-self and justify-self */
+/* align is vertical
+justify is horizontal with flex-direction set to row */
+/* There is no justify-self in flexbox */
+/* justify — to position something along the primary axis.
+align — to position something along the cross axis.
+content — a group of “stuff” that can be distributed.
+items — single items that can be positioned individually. */
+/* And so: we have justify-content to control the distribution
+ of the group along the primary axis, and we have align-items
+  to position each item individually along the cross axis. 
+  These are the two main properties we use to manage layout 
+  with Flexbox.
+
+There's no justify-items for the same reason that there's no
+ justify-self; when it comes to the primary axis, we have to 
+ think of the items as a group, as content that can be 
+ distributed. */
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 10px;
 }
 
 a {
@@ -22,4 +64,5 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+  border: 2px solid burlywood;
 }

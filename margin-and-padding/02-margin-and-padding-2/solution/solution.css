@@ -46,7 +46,7 @@ We separated it out here to make it extra clear what has changed. */
 }
 
 .content {
-  margin-bottom: 8px;
+  margin: 8px auto;
   padding: 16px 8px;
 }
 
@@ -57,6 +57,6 @@ We separated it out here to make it extra clear what has changed. */
 
 button {
   display: block;
-  margin: 0 auto;
+  margin: 8px auto;
   padding: 8px 24px;
 }
